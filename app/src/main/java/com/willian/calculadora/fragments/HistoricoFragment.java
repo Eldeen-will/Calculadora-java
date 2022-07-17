@@ -1,22 +1,19 @@
 package com.willian.calculadora.fragments;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.os.Bundle;
 
+import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.willian.calculadora.Historico;
 import com.willian.calculadora.R;
 
-public class HistoricoFragment extends Fragment {
+public class HistoricoFragment extends Fragment { // fragment historico para segunda aba do aplicativo
 
+    // Declaração de variáveis para manipulação dos componentes e classe
     androidx.appcompat.widget.AppCompatTextView txtHistorico, txtResultado;
     androidx.appcompat.widget.AppCompatButton atualizar_historico;
     Historico historico;
@@ -29,11 +26,13 @@ public class HistoricoFragment extends Fragment {
 
         iniciarComponente(view);
 
+        // botão para atualizar o histórico, sempre que necessário
         atualizar_historico.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { // Ao clicar no botão, será usado os metódos da classe para recuparar os dados das contas
                 historico = new Historico();
-                txtHistorico.setText(historico.getConta());
+                txtHistorico.append("\n"+historico.getConta());
+                txtHistorico.append(historico.getResultado()+"\n");
             }
         });
 

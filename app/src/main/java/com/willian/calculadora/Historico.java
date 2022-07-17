@@ -1,12 +1,11 @@
 package com.willian.calculadora;
 
-import java.util.ArrayList;
-
+// Classe para manipulação dos dados do histórico
 public class Historico {
-
+    // Declaração das variáveis
     private String conta;
     private String resultado;
-
+    // Gets para recuperar dados e sets para definir os mesmos
     public String getConta() { return conta;}
 
     public String getResultado() {return resultado;}
