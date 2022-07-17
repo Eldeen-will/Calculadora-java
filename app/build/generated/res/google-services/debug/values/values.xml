@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">416557828424-hkff1ukl2u2a8pfgqeos1u9kd71qoq1c.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">416557828424</string>
+    <string name="google_api_key" translatable="false">AIzaSyDOqPfRHH7YQrpmwjdfoa5IDgGxjDrvCEE</string>
+    <string name="google_app_id" translatable="false">1:416557828424:android:085e44218b37ee4b2a4b7d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDOqPfRHH7YQrpmwjdfoa5IDgGxjDrvCEE</string>
+    <string name="google_storage_bucket" translatable="false">calculadora-701ad.appspot.com</string>
+    <string name="project_id" translatable="false">calculadora-701ad</string>
+</resources>
